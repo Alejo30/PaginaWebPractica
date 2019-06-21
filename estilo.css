@@ -1,53 +1,19 @@
 
+header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  text-align: center
+}
 
 #cuerpo{
-  background-image: url(img/fondo.jpg);
+  /*background-image: url(img/descarga.jpg);*/
+  background-color: #4CAF50;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
 }
 
-
-ul{
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #245782;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-li{
-  float: left;
-  text-align: center;
-  color: white;
-}
-
-
-li a {
-
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: black;
-}
-
-li a:hover:not(.active){
-  background-color: lime;
-}
-
-.active{
-  background-color: green;
-}
 
 img{
   float: center;
@@ -83,25 +49,91 @@ figure {
 	text-align: center;
 }
 
+
+
 pre{
 	text-align: left;
 }
 
 /*menu despegable*/
 
-li.dropdown{
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303F9F;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #8BC34A;
+}
+
+li.dropdown {
   display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*formulario*/
+
+ #formulario{
+  float: center;
+  background-color:  #f2f2f2;
+}
+input[type=text], select {
+  width: 99%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
