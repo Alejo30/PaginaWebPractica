@@ -1,136 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Galeria Copa America</title>
-        <meta charset="utf-8">
-        <meta name= "description" content="Galeria">
-        <meta name="keywoords" content="HTML, CSS3, Javascript">
-        <link rel="stylesheet" type="text/css" href="estilo.css">         
 
-        <style>
-                div.gallery {
-                  margin: 22px;
-                  border: 1px solid #ccc;
-                  float: left;
-                  width: 220px;
-                  height: 530px;
-                  
-                }
-                
-                div.gallery:hover {
-                  border: 1px solid #777;
-                }
-                
-                div.gallery img {
-                  width:220px ;
-                  height:260;
-                  border-radius: 0%;
+<head>
+    <title>Galeria Copa America</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Galeria">
+    <meta name="keywoords" content="HTML, CSS3, Javascript">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 
-                }
-                
-                div.desc {
-                  padding: 15px;
-                  text-align: center;
-                }
+    <style>
+        div.gallery {
+            margin: 22px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 220px;
+            height: 530px;
 
-                div.home {
-                    display: block;
-                    margin-left: 45%;
-                    
-                    width: 40%;
-                }
-                </style>
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 220px;
+            height: 260;
+            border-radius: 0%;
+
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        div.home {
+            display: block;
+            margin-left: 45%;
+
+            width: 40%;
+        }
+    </style>
 
 
-    </head>
-    <body style="background-color: #4CAF50">
-        <header>
-            <div style="background: #303F9F">
-                    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 400%; text-align: center; color: white"> Jugadores Destacados </h1>
-            </div>
-        </header>
+</head>
 
-        <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Inicio</a></li>
-                    <li class="dropdown">
-                      <a href="#partidos">Partidos</a>
-                      <div class="dropdown-content">
-                          <p> <a href="#partidos">Fase de grupos</a> </p>
-                      </div>
-                    </li>
-                    <li><a href="#tablas">Clasificación</a></li>
-                    <li><a href="#equipos">Equipos</a></li>
-                    <li><a href="#equipos">Galeria</a></li>
-                    <li><a href="formulario.html">Sorteo</a></li>
-                   
-                </ul>
-                
-            </nav> 
-
-        <div style="background: rgb(127, 255, 0, 0.2)">
-            <div class="gallery">
-                    <a a target="_blank"><img src="img/jugadorBrasil.jpg" alt="Jugador Brasil" width="220" height="250" ></a>
-                    <div class="desc">
-                        <h1>Roberto Firmino</h1>
-                            Juega como mediapunta, delantero 
-                            centro o mediocampista ofensivo y 
-                            su equipo actual es el 
-                            Liverpool Football Club de la Premier League.
-                    </div>
-            </div>
-
-            <div class="gallery"> 
-                    <a a target="_blank"><img src="img/jugadorArgentina.jpg" alt="Jugador Argentina" width="220" height="250"></a>
-                    <div class="desc">
-                        <h1>Lionel Andrés Messi</h1>
-                        Juega como delantero o 
-                        centrocampista. Ha desarrollado toda 
-                        su carrera en el FC Barcelona de 
-                        España y en 
-                        la selección argentina, de la que 
-                        es capitán.
-                   </div>
-            </div>
-
-            <div class="gallery"> 
-                    <a a target="_blank"><img src="img/jugadorUruguay.jpg" alt="Jugador Uruguay" width="220" height="250"></a>
-                    <div class="desc">
-                        <h1>Luis Suárez Díaz</h1>
-                        Juega como delantero en el Fútbol Club Barcelona. 
-                        Es internacional absoluto con la selección de fútbol de Uruguay, 
-                        de la cual es el máximo goleador histórico.
-                   </div>
-            </div>
-
-            
-            <div class="gallery"> 
-                    <a a target="_blank"><img src="img/jugadorColombia.jpg" alt="Jugador Colombia" width="220" height="250"></a>
-                    <div class="desc">
-                        <h1>James Rodriguez</h1>
-                        Se desempeña en la posición de centrocampista. 
-                        Actualmente su pase pertenece al Real Madrid. 
-                        Además es internacional absoluto con la selección de fútbol de Colombia.
-                   </div>
-            </div>
-            <div class="gallery"> 
-                    <a a target="_blank"><img src="img/jugadorEcuador.jpg" alt="Jugador Ecuador" width="220" height="250"></a>
-                    <div class="desc">
-                        <h1>Antonio Valencia</h1>
-                        Juega como lateral derecho. Su último club fue el Manchester United, 
-                        de la Premier League de Inglaterra. Se ha mantenido en la élite mundial por más de 10 años.
-                   </div>
-            </div>
-
-            
-            
+<body style="background-color: #4CAF50">
+    <header>
+        <div style="background: #303F9F">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 400%; text-align: center; color: white">
+                Jugadores Destacados </h1>
         </div>
-        <div class="home">
-                <a href="index.html" ><img src="img/home.png" alt="home" width="80" height="80">        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#partidos">Partidos</a>
+                <div class="dropdown-content">
+                    <p> <a href="#partidos">Fase de grupos</a> </p>
+                </div>
+            </li>
+            <li><a href="#tablas">Clasificación</a></li>
+            <li><a href="#equipos">Equipos</a></li>
+            <li><a href="#equipos">Galeria</a></li>
+            <li><a href="formulario.html">Sorteo</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div style="background: rgb(127, 255, 0, 0.2)">
+        <div class="gallery">
+            <a a target="_blank"><img src="img/jugadorBrasil.jpg" alt="Jugador Brasil" width="220" height="250"></a>
+            <div class="desc">
+                <h1>Roberto Firmino</h1>
+                Juega como mediapunta, delantero
+                centro o mediocampista ofensivo y
+                su equipo actual es el
+                Liverpool Football Club de la Premier League.
+            </div>
         </div>
 
-       
+        <div class="gallery">
+            <a a target="_blank"><img src="img/jugadorArgentina.jpg" alt="Jugador Argentina" width="220"
+                    height="250"></a>
+            <div class="desc">
+                <h1>Lionel Andrés Messi</h1>
+                Juega como delantero o
+                centrocampista. Ha desarrollado toda
+                su carrera en el FC Barcelona de
+                España y en
+                la selección argentina, de la que
+                es capitán.
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a a target="_blank"><img src="img/jugadorUruguay.jpg" alt="Jugador Uruguay" width="220" height="250"></a>
+            <div class="desc">
+                <h1>Luis Suárez Díaz</h1>
+                Juega como delantero en el Fútbol Club Barcelona.
+                Es internacional absoluto con la selección de fútbol de Uruguay,
+                de la cual es el máximo goleador histórico.
+            </div>
+        </div>
 
 
-    </body>
+        <div class="gallery">
+            <a a target="_blank"><img src="img/jugadorColombia.jpg" alt="Jugador Colombia" width="220" height="250"></a>
+            <div class="desc">
+                <h1>James Rodriguez</h1>
+                Se desempeña en la posición de centrocampista.
+                Actualmente su pase pertenece al Real Madrid.
+                Además es internacional absoluto con la selección de fútbol de Colombia.
+            </div>
+        </div>
+        <div class="gallery">
+            <a a target="_blank"><img src="img/jugadorEcuador.jpg" alt="Jugador Ecuador" width="220" height="250"></a>
+            <div class="desc">
+                <h1>Antonio Valencia</h1>
+                Juega como lateral derecho. Su último club fue el Manchester United,
+                de la Premier League de Inglaterra. Se ha mantenido en la élite mundial por más de 10 años.
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <table style="width:80%" ; align="center" ;>
+        <tr>
+            <th><iframe width="430" height="315" src="https://www.youtube.com/embed/sfUSr3GAOJs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></th>
+            <th><iframe width="430" height="315" src="https://www.youtube.com/embed/0pTxhcM6kxw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></th>
+            <th><iframe width="430" height="315" src="https://www.youtube.com/embed/U8o1cipA6w8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></th>
+        </tr>
+        <tr>
+            <td><iframe width="430" height="315" src="https://www.youtube.com/embed/1qjez64dTIU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></td>
+            <td><iframe width="430" height="315" src="https://www.youtube.com/embed/k8b5240Nzsw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></td>
+            <td><iframe width="430" height="315" src="https://www.youtube.com/embed/p0Z_-iS9lQ0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></td>
+        </tr>
+    </table>
+
+    <div class="home">
+        <a href="index.html"><img src="img/home.png" alt="home" width="80" height="80"></a>
+    </div>
+
+</body>
+
 </html>
