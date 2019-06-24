@@ -24,8 +24,6 @@ img{
 }
 
 footer {
-
-  1o'+
   background-color: #777;
   padding: 10px;
   text-align: center;
@@ -43,7 +41,7 @@ table, th, td{
 	border: 1px solid black;
 	border-collapse: collapse;
 	float: center;
-	
+	color: white;
 }
 
 
