@@ -19,6 +19,16 @@
     });
   });
   </script>
+  
+  <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#eliminados").fadeTo("slow", 0);
+  });
+});
+</script>
+  
+  
 </head>
 
 <body>
@@ -28,7 +38,7 @@
     <h1> Copa América Brasil 2019 </h1> <img src="img\copa.gif" alt="copa animada" width="95">
   </header>
   
-  <button>Hide</button>
+  
 
 
   <section id="cuerpo">
@@ -67,22 +77,29 @@
         </sup></p>
       </article>
     </div>
+	<button >Mostrar equipos clasificados a cuartos de final</button>
     <div id="equipos">
       <h2>Equipos</h2>
       <hr color="black"; width="50%">
       <br>
-      <img src="img\arg.png" alt="argentina" width="160" height="160"> 
-      <img src="img\bol.png" alt="bolivia" width="160" height="160">
-      <img src="img\bra.png" alt="brasil" width="160" height="160">
+	  
+	  <img src="img\bra.png" alt="brasil" width="160" height="160">
       <img src="img\chi.png" alt="chile" width="160" height="160">
       <img src="img\col.png" alt="colombia" width="160" height="160">
-      <img src="img\ecu.png" alt="ecuador" width="160" height="160">
-      <img src="img\par.png" alt="paraguay" width="160" height="160">
+      <img src="img\arg.png" alt="argentina" width="160" height="160"> 
+	  <img src="img\par.png" alt="paraguay" width="160" height="160">
       <img src="img\per.png" alt="peru" width="160" height="160">
       <img src="img\uru.png" alt="uruguay" width="160" height="160">
-      <img src="img\ven.png" alt="venezuela" width="160" height="160">
-      <img src="img\jap.png" alt="japon" width="160" height="160">
-      <img src="img\qat.png" alt="qatar" width="160" height="160">
+	  <img src="img\ven.png" alt="venezuela" width="160" height="160">
+	  <div id="eliminados">
+		<img src="img\bol.png" alt="bolivia" width="160" height="160">
+		<img src="img\ecu.png" alt="ecuador" width="160" height="160">
+		<img src="img\jap.png" alt="japon" width="160" height="160">
+		<img src="img\qat.png" alt="qatar" width="160" height="160">
+	  </div>
+	  
+	  
+      
     </div>
 
     <div id="partidos">
