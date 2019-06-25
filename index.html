@@ -8,6 +8,17 @@
   <meta name="keywoords" content="HTML, CSS3, Javascript">
   <link rel="stylesheet" type="text/css" href="estilo.css">
   <link rel = "shortcut icon" href = "img/iconobarra.png">
+  <script src="js/jquery.js"></script>  
+  <script>
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("#tablas").hide("slow");
+    });
+    $("#show").click(function(){
+      $("#tablas").show("slow");
+    });
+  });
+  </script>
 </head>
 
 <body>
@@ -196,9 +207,19 @@
 
       </article>
     </div>
+    
+    <br>
+    <br>
+    <div style="align-content: center">
+      <button  id="hide">Ocultar Clasificacion</button>
+    <button id="show">Mostrar Clasificacion</button>
+    </div>
+    
 
   </section>
 </body>
 <br>
-<footer>Derechos Reservados Alejandro Coraizaca &reg; - Luis Chuquiguanga &reg;</footer>
+<footer>Derechos Reservados Alejandro Coraizaca &reg; - Luis Chuquiguanga &reg;
+ 
+</footer>
 </html>
