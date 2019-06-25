@@ -8,18 +8,17 @@
   <meta name="keywoords" content="HTML, CSS3, Javascript">
   <link rel="stylesheet" type="text/css" href="estilo.css">
   <link rel = "shortcut icon" href = "img/iconobarra.png">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("div id="equipos" ").hide(1000);
+  <script src="js/jquery.js"></script>  
+  <script>
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("#tablas").hide("slow");
+    });
+    $("#show").click(function(){
+      $("#tablas").show("slow");
+    });
   });
-});
-</script>
-  
-  
-  
+  </script>
 </head>
 
 <body>
@@ -214,9 +213,19 @@ $(document).ready(function(){
 
       </article>
     </div>
+    
+    <br>
+    <br>
+    <div style="align-content: center">
+      <button  id="hide">Ocultar Clasificacion</button>
+    <button id="show">Mostrar Clasificacion</button>
+    </div>
+    
 
   </section>
 </body>
 <br>
-<footer>Derechos Reservados Alejandro Coraizaca &reg; - Luis Chuquiguanga &reg;</footer>
+<footer>Derechos Reservados Alejandro Coraizaca &reg; - Luis Chuquiguanga &reg;
+ 
+</footer>
 </html>
