@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Ejemplo de párrafos">
   <meta name="keywoords" content="HTML, CSS3, Javascript">
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
   <link rel = "shortcut icon" href = "img/iconobarra.png">
   <script src="js/jquery.js"></script>  
   <script>
@@ -36,6 +36,16 @@ $(document).ready(function(){
         }
 		
 	</style>
+  
+
+  <script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#G_A").slideDown("slow");
+      });
+    });
+    </script>
+  
 </head>
 
 <body>
@@ -124,7 +134,7 @@ $(document).ready(function(){
                         Los Grupos de la actual ediciòn quedaron de la siguiente manera:
                     </pre>
 
-        <h2>GRUPO A</h2>
+        <h2 id="G_A">GRUPO A</h2>
 
         <table style="width:80%" ; align="center" ;>
           <thead>
