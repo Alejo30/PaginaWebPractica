@@ -27,6 +27,15 @@ $(document).ready(function(){
   });
 });
 </script>
+	<style>
+		div.cuartos img {
+            width: 420px;
+            height: 460;
+            border-radius: 0%;
+			
+        }
+		
+	</style>
   
 
   <script> 
@@ -92,7 +101,7 @@ $(document).ready(function(){
         </sup></p>
       </article>
     </div>
-	<button >Mostrar equipos clasificados a cuartos de final</button>
+	<button style >Mostrar equipos clasificados a cuartos de final</button>
     <div id="equipos">
       <h2>Equipos</h2>
       <hr color="black"; width="50%">
@@ -252,7 +261,78 @@ $(document).ready(function(){
       <button  id="hide">Ocultar Clasificacion</button>
     <button id="show">Mostrar Clasificacion</button>
     </div>
-    
+	
+	<div id="equiposinfo" >
+		<h2>Información de Equipos</h2>
+        <hr color="black"; width="100%">
+        <pre style="text-align: justify-all; font-size:150%"; >
+			 Haga click en un equipo para revisar su plantilla
+		</pre>
+
+		<table align="center">
+          
+          <tr>
+            <th>Brasil</th>
+            <th>Bolivia</th>
+            <th>Perù</th>
+            <th>Venezuela</th>
+          </tr>
+        
+          <tr>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/brasil/1881/plantilla/" target = "_top"> <img src="img\bra.png" alt="brasil" width="130" height="120"></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/bolivia/1905/plantilla/" target = "_top"> <img src="img\bol.png" alt="bolivia" width="130" height="120"></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/peru/1429/plantilla/" target = "_top"><img src="img\per.png" alt="peru" width="130" height="120"></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/venezuela/2930/plantilla/" target = "_top"><img src="img\ven.png" alt="venezuela" width="130" height="120"></a></td>
+          </tr>
+          <tr>
+            <td>Argentina</td>
+            <td>Colombia</td>
+            <td>Paraguay</td>
+            <td>Qatar</td>
+          </tr>
+          <tr>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/argentina/1879/plantilla/" target = "_top"><img src="img\arg.png" alt="argentina" width="130" height="120"></a> </td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/colombia/2087/plantilla/" target = "_top"><img src="img\col.png" alt="colombia" width="130" height="120"></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/paraguay/1916/plantilla/" target = "_top"><img src="img\par.png" alt="paraguay" width="130" height="120"></a></td>
+            <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Catar" target = "_top"><img src="img\qat.png" alt="qatar" width="130" height="120"></a></td>
+          </tr>
+          <tr>
+            <td>Chile</td>
+            <td>Uruguay</td>
+            <td>Ecuador</td>
+            <td>Japón</td>
+          </tr>
+          <tr>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/chile/2077/plantilla/" target = "_top"><img src="img\chi.png" alt="chile" width="130" height="120" ></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/uruguay/1901/plantilla/" target = "_top"><img src="img\uru.png" alt="uruguay" width="130" height="120"></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/ecuador/1887/plantilla/" target = "_top"><img src="img\ecu.png" alt="ecuador" width="130" height="120"></a></td>
+            <td><a href="https://resultados.as.com/resultados/ficha/equipo/japon/1187/plantilla/" target = "_top"><img src="img\jap.png" alt="japon" width="130" height="120"></a></td>
+          </tr>
+        </table>
+
+	
+	</div>	
+	<div class = "cuartos">
+	<h2>Cuartos de Final</h2>
+        <hr color="black"; width="100%">
+        <pre style="text-align: justify-all; font-size:150%"; >
+			 Haga click en un partido para mostrar información
+		</pre>
+		
+		<map name = "mapa">
+			<area shape = "rect" coords = "32,41,186,96" href = "https://www.futbolred.com/copa-america-brasil-2019/asi-va-el-historial-paraguay-vs-brasil-copa-america-cuartos-de-final-101852">
+			<area shape = "rect" coords = "206,41,372,96" href = "https://colombia.as.com/colombia/2019/06/25/futbol/1561426087_976092.html">
+			<area shape = "rect" coords = "30,150,186,208" href = "https://www.winsports.co/copa-america/noticias/10-datos-que-debes-saber-antes-del-duelo-venezuela-vs-argentina-114882">
+			<area shape = "rect" coords = "206,158,372,208" href = "https://depor.com/futbol-peruano/peru-vs-uruguay-resultados-estadisticas-partidos-historia-copa-america-120880">
+		
+		</map>
+		
+		<img src = "img/mapa.png" usemap = "#mapa" >
+		
+	</div>
+
+
+
 
   </section>
 
